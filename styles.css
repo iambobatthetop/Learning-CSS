@@ -21,6 +21,54 @@ body {
     background-color: var(--bg);
 }
 
+header,
+main,
+footer {
+    padding: 24px;
+}
+
+header,
+footer {
+    background-color: #1b1b1b;
+}
+
+header p {
+    margin-top: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-top: 1px solid #3b3b3b;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary-dark);
+}
+
+.about-content {
+    max-width: 720px;
+    padding: 28px 0 36px;
+}
+
+.about-content h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
 h1 {
     color: var(--primary);
 }
