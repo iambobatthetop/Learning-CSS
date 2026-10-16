@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* variables */
+
+:root {
+    --bg: #232323;
+    --text-color: #ababab;
+    --primary: #0ed19d;
+    --primary-dark: #14a07b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: var(--bg);
+}
+
+h1 {
+    color: var(--primary);
+}
+p {
+    color: var(--text-color);
+}
+
+section{
+    > p {
+        font-size: 1.2rem;
+    }
+
+}
+
+a.btn{
+   display: inline-block;
+   padding: 6px 12px;
+   margin:  20px 0;
+   text-decoration: none;
+   background-color: var(--primary);
+   border-radius: 4px;
+   color: white;
+
+
+}
+
+a.btn:hover {
+    background-color: var(--primary-dark);
+}
+
+li {
+    list-style-type: none;
+    color: white;
+
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px dotted grey;
+
+}
+
+li:first-child, li:last-child{
+    color: var(--primary);
+    border-color: var(--primary-dark);
+}
+
+li:nth-child(2n){
+    color:crimson;
+
+}
