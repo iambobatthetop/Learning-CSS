@@ -3,10 +3,10 @@
 /* variables */
 
 :root {
-    --bg: #232323;
-    --text-color: #ababab;
-    --primary: #0ed19d;
-    --primary-dark: #14a07b;
+    --bg: #f7f9f7;
+    --text-color: #3f514b;
+    --primary: #087f68;
+    --primary-dark: #056653;
 }
 
 * {
@@ -29,7 +29,7 @@ footer {
 
 header,
 footer {
-    background-color: #1b1b1b;
+    background-color: #e8f0ec;
 }
 
 header p {
@@ -41,7 +41,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    border-top: 1px solid #3b3b3b;
+    border-top: 1px solid #cbd9d2;
 }
 
 footer a {
@@ -59,7 +59,7 @@ footer a:hover {
 }
 
 .about-content h2 {
-    color: white;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -90,7 +90,7 @@ a.btn{
    text-decoration: none;
    background-color: var(--primary);
    border-radius: 4px;
-   color: white;
+    color: white;
 
 
 }
@@ -101,7 +101,7 @@ a.btn:hover {
 
 li {
     list-style-type: none;
-    color: white;
+    color: var(--text-color);
 
     display: inline-block;
     padding: 10px;
@@ -116,6 +116,6 @@ li:first-child, li:last-child{
 }
 
 li:nth-child(2n){
-    color:crimson;
+    color: var(--primary-dark);
 
 }
