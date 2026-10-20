@@ -38,10 +38,57 @@ header p {
 
 footer {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    border-top: 1px solid #cbd9d2;
+}
+
+.newsletter-form h2 {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.newsletter-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.newsletter-fields input {
+    flex: 1 1 220px;
+    max-width: 360px;
+    padding: 10px 12px;
+    border: 1px solid #aebfb6;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.newsletter-fields input:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.newsletter-fields button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.newsletter-fields button:hover {
+    background-color: var(--primary-dark);
+}
+
+.footer-bottom {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    border-top: 1px solid #cbd9d2;
 }
 
 footer a {
@@ -51,6 +98,18 @@ footer a {
 
 footer a:hover {
     color: var(--primary-dark);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .about-content {
